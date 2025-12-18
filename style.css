@@ -1,0 +1,104 @@
+/* style.css */
+
+/* Reset & Base Style */
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+/* Memperlebar container utama */
+.container {
+    max-width: 1440px !important; 
+    width: 95% !important;
+}
+
+.main-container {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.category-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+
+.category-title {
+    border-left: 5px solid #0d6efd;
+    padding-left: 15px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* Flexbox Card Container */
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 12px; /* Jarak antar kartu diperkecil */
+}
+
+/* Card Styling - DIPERBARUI AGAR MUAT 4 */
+.card-link {
+    /* Gunakan 23% agar ada sisa ruang 8% untuk total gap 3 celah */
+    width: calc(24% - 10px); 
+    
+    /* min-width dikecilkan secara drastis agar tidak memaksa turun */
+    min-width: 200px; 
+    
+    min-height: 200px;
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.card-link:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12) !important;
+    border-color: #0d6efd;
+}
+
+/* Card Components */
+.card-title {
+    font-size: 0.9rem; /* Ukuran font dikecilkan */
+    color: #212529;
+    font-weight: 600;
+}
+
+.id-badge {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    background-color: #e9ecef;
+    color: #495057;
+    border-radius: 6px;
+}
+
+.btn-sheet, .btn-primary, .btn-info, .btn-warning {
+    font-size: 0.8rem;
+    padding: 6px;
+    margin-top: auto; 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1000px) {
+    .card-link {
+        width: calc(33.33% - 12px); /* 3 Kartu */
+    }
+}
+
+@media (max-width: 768px) {
+    .card-link {
+        width: calc(50% - 12px); /* 2 Kartu */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-link {
+        width: 100%; /* 1 Kartu */
+    }
+}
