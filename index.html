@@ -9,6 +9,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom Brown Style for Technician Section */
+        .text-brown { color: #8B4513 !important; }
+        .btn-brown { 
+            background-color: #8B4513 !important; 
+            border-color: #8B4513 !important; 
+            color: white !important; 
+        }
+        .btn-brown:hover { 
+            background-color: #6F370F !important; 
+            border-color: #6F370F !important; 
+        }
+    </style>
 </head>
 <body>
 
@@ -40,64 +53,122 @@
                     </div>
                     <span class="id-badge mb-3">ID: FIN-001</span>
                     <p class="card-text small text-secondary">Data task, Ticket dan Penjadwalan Kegiatan.</p>
-                    <a href="https://docs.google.com/spreadsheets/d/15MtwXYEuMHb_YozdmC0t1iX4QZdPHvMJahgx6oCK1W4/edit?usp=sharing" target="_blank" class="btn btn-sheet w-100 mt-auto">
+                    <a href="http://10.0.0.200:5000/oo/r/16N0H5HePv6HCnLebEjyFqtc8OC0UovK" target="_blank" class="btn btn-primary w-100 mt-auto">
                         <i class="bi bi-box-arrow-up-right me-1"></i> Buka Sheet
                     </a>
                 </div>
             </div>
-            
-            <div class="card card-link document-item border-dashed bg-light">
-                <div class="card-body text-center d-flex flex-column justify-content-center cursor-pointer">
-                    <i class="bi bi-plus-circle fs-1 text-muted"></i>
-                    <p class="text-muted mt-2">Tambah Link Kegiatan</p>
+
+            <div class="card card-link document-item">
+                <div class="card-body d-flex flex-column">
+                    <div class="d-flex justify-content-between mb-2">
+                        <h5 class="card-title text-truncate">NAS Team Folder</h5>
+                        <i class="bi bi-hdd-network text-primary fs-4"></i>
+                    </div>
+                    <span class="id-badge mb-3">ID: NAS-DRV-01</span>
+                    <p class="card-text small text-secondary">Akses penyimpanan lokal Synology Drive untuk dokumen internal tim.</p>
+                    <a href="http://10.0.0.200:5000/?launchApp=SYNO.SDS.Drive.Application#TeamFolder" target="_blank" class="btn btn-primary w-100 mt-auto">
+                        <i class="bi bi-cloud-arrow-down me-1"></i> Buka Drive
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="category-section mb-4 shadow-sm">
-        <h3 class="category-title text-info" style="border-left-color: #0dcaf0;">NOC & Teknisi</h3>
+        <h3 class="category-title text-secondary" style="border-left-color: #6c757d;">Data Pelanggan</h3>
         <div class="card-wrapper">
             <div class="card card-link document-item">
                 <div class="card-body d-flex flex-column">
                     <div class="d-flex justify-content-between mb-2">
-                        <h5 class="card-title text-truncate">Doc Config / Materi</h5>
+                        <h5 class="card-title text-truncate">Calon Pelanggan</h5>
+                        <i class="bi bi-person-plus-fill text-info fs-4"></i>
+                    </div>
+                    <span class="id-badge mb-3">ID: CUST-NEW-01</span>
+                    <p class="card-text small text-secondary">Data prospek dan list calon pelanggan baru Bluefiber.</p>
+                    <a href="https://docs.google.com/spreadsheets/d/1x0NeTSgUlTzxKtnUfL1yYE_EgpBnT0fOYK5osTMMEqc/edit?gid=896376254#gid=896376254" target="_blank" class="btn btn-info text-white w-100 mt-auto">Buka Data</a>
+                </div>
+            </div>
+
+            <div class="card card-link document-item">
+                <div class="card-body d-flex flex-column">
+                    <div class="d-flex justify-content-between mb-2">
+                        <h5 class="card-title text-truncate">Pelanggan Suspend</h5>
+                        <i class="bi bi-person-x-fill text-danger fs-4"></i>
+                    </div>
+                    <span class="id-badge mb-3">ID: CUST-SPD-01</span>
+                    <p class="card-text small text-secondary">Rekap data pelanggan yang dalam status suspend/isolir.</p>
+                    <a href="http://10.0.0.200:5000/oo/r/16RMDnaQku4jj9gecq7wpUMV9wtzLXJv#tid=1" target="_blank" class="btn btn-danger w-100 mt-auto">Buka Data</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-section mb-4 shadow-sm">
+        <h3 class="category-title text-info" style="border-left-color: #0dcaf0;">NOC</h3>
+        <div class="card-wrapper">
+            <div class="card card-link document-item">
+                <div class="card-body d-flex flex-column">
+                    <div class="d-flex justify-content-between mb-2">
+                        <h5 class="card-title text-truncate">Knowledge Base / KB</h5>
                         <i class="bi bi-router text-info fs-4"></i>
                     </div>
-                    <span class="id-badge mb-3">ID: NOC-KB-01</span>
-                    <p class="card-text small text-secondary">Knowledge Base Bluefiber untuk teknisi dan operasional NOC.</p>
-                    <a href="https://kb.bluefiber.id/" target="_blank" class="btn btn-info text-white w-100 mt-auto">Buka Materi</a>
+                    <span class="id-badge mb-3">ID: NOC-WRL-01</span>
+                    <p class="card-text small text-secondary">Knowledge Base Bluefiber.</p>
+                    <a href="http://kb.bluefiber.id/login" target="_blank" class="btn btn-info text-white w-100 mt-auto">Buka Materi</a>
                 </div>
             </div>
             
             <div class="card card-link document-item">
                 <div class="card-body d-flex flex-column">
                     <div class="d-flex justify-content-between mb-2">
-                        <h5 class="card-title text-truncate">Map KMZ Backbone</h5>
+                        <h5 class="card-title text-truncate">DNS Wireless</h5>
                         <i class="bi bi-map text-info fs-4"></i>
                     </div>
-                    <span class="id-badge mb-3">ID: NOC-MAP-01</span>
-                    <p class="card-text small text-secondary">Visualisasi jalur kabel backbone dan distribusi KMZ.</p>
-                    <a href="#" target="_blank" class="btn btn-info text-white w-100 mt-auto">Lihat Map</a>
+                    <span class="id-badge mb-3">ID: NOC-WRLS-01</span>
+                    <p class="card-text small text-secondary">List Ip DNS Pelanggan Wireless.</p>
+                    <a href="http://10.0.0.200:5000/oo/r/16OvXXDJiyK3VfroHCflBuJVy4CTXdDz" target="_blank" class="btn btn-info text-white w-100 mt-auto">Buka DNS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-section mb-4 shadow-sm">
+        <h3 class="category-title text-brown" style="border-left-color: #8B4513;">Teknisi</h3>
+        <div class="card-wrapper">
+            <div class="card card-link document-item">
+                <div class="card-body d-flex flex-column">
+                    <div class="d-flex justify-content-between mb-2">
+                        <h5 class="card-title text-truncate">Jalur Backbone</h5>
+                        <i class="bi bi-router text-brown fs-4"></i>
+                    </div>
+                    <span class="id-badge mb-3">ID: NOC-BB-01</span>
+                    <p class="card-text small text-secondary">Jalur Backbone Utama.</p>
+                    <a href="http://kb.bluefiber.id/login" target="_blank" class="btn btn-brown w-100 mt-auto">Buka Materi</a>
+                </div>
+            </div>
+            
+            <div class="card card-link document-item">
+                <div class="card-body d-flex flex-column">
+                    <div class="d-flex justify-content-between mb-2">
+                        <h5 class="card-title text-truncate">Jalur Metro</h5>
+                        <i class="bi bi-map text-brown fs-4"></i>
+                    </div>
+                    <span class="id-badge mb-3">ID: NOC-MTR-01</span>
+                    <p class="card-text small text-secondary">Visualisasi jalur Metro.</p>
+                    <a href="#" target="_blank" class="btn btn-brown w-100 mt-auto">Lihat Map</a>
                 </div>
             </div>
 
             <div class="card card-link document-item">
                 <div class="card-body d-flex flex-column">
                     <div class="d-flex justify-content-between mb-2">
-                        <h5 class="card-title text-truncate">MAP Data Lokasi ODP</h5>
-                        <i class="bi bi-pin-map-fill text-info fs-4"></i>
+                        <h5 class="card-title text-truncate">Data Lokasi ODP</h5>
+                        <i class="bi bi-pin-map-fill text-brown fs-4"></i>
                     </div>
                     <span class="id-badge mb-3">ID: NOC-ODP-01</span>
-                    <p class="card-text small text-secondary">Data sebaran dan lokasi titik ODP di lapangan.</p>
-                    <a href="#" target="_blank" class="btn btn-info text-white w-100 mt-auto">Cek Lokasi</a>
-                </div>
-            </div>
-
-            <div class="card card-link document-item border-dashed bg-light">
-                <div class="card-body text-center d-flex flex-column justify-content-center cursor-pointer">
-                    <i class="bi bi-plus-circle fs-1 text-muted"></i>
-                    <p class="text-muted mt-2">Tambah Link NOC</p>
+                    <p class="card-text small text-secondary">Data sebaran lokasi titik ODP.</p>
+                    <a href="#" target="_blank" class="btn btn-brown w-100 mt-auto">Cek Lokasi</a>
                 </div>
             </div>
         </div>
@@ -113,39 +184,20 @@
                         <i class="bi bi-box-seam text-warning fs-4"></i>
                     </div>
                     <span class="id-badge mb-3">ID: INV-AST-01</span>
-                    <p class="card-text small text-secondary">Pendataan keluar masuk barang gudang.</p>
-                    <a href="#" target="_blank" class="btn btn-warning text-white w-100 mt-auto">Cek Stok</a>
+                    <p class="card-text small text-secondary">Pendataan gudang.</p>
+                    <a href="http://10.0.0.200:5000/oo/r/16MJatBq0oK7RKsOQX6YAoP6iavgNa6t#tid=1" target="_blank" class="btn btn-warning text-white w-100 mt-auto">Cek Stok</a>
                 </div>
             </div>
 
             <div class="card card-link document-item">
                 <div class="card-body d-flex flex-column">
                     <div class="d-flex justify-content-between mb-2">
-                        <h5 class="card-title text-truncate">Billing Radius</h5>
+                        <h5 class="card-title text-truncate">Form Pengajuan</h5>
                         <i class="bi bi-cash-stack text-warning fs-4"></i>
                     </div>
-                    <span class="id-badge mb-3">ID: BIL-RAD-01</span>
-                    <p class="card-text small text-secondary">Manajemen billing dan isolir pelanggan.</p>
-                    <a href="#" target="_blank" class="btn btn-warning text-white w-100 mt-auto">Buka Billing</a>
-                </div>
-            </div>
-
-            <div class="card card-link document-item">
-                <div class="card-body d-flex flex-column">
-                    <div class="d-flex justify-content-between mb-2">
-                        <h5 class="card-title text-truncate">Data Modem</h5>
-                        <i class="bi bi-router-fill text-warning fs-4"></i>
-                    </div>
-                    <span class="id-badge mb-3">ID: INV-MDM-01</span>
-                    <p class="card-text small text-secondary">Rekap serial number (SN) dan tipe modem.</p>
-                    <a href="#" target="_blank" class="btn btn-warning text-white w-100 mt-auto">Detail Data</a>
-                </div>
-            </div>
-
-            <div class="card card-link document-item border-dashed bg-light">
-                <div class="card-body text-center d-flex flex-column justify-content-center cursor-pointer">
-                    <i class="bi bi-plus-circle fs-1 text-muted"></i>
-                    <p class="text-muted mt-2">Tambah Link Inventory</p>
+                    <span class="id-badge mb-3">ID: BIL-PO-01</span>
+                    <p class="card-text small text-secondary">Form Pengajuan Barang.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSedn0ePU71FNqza32BEAN4TDUvy9l30qfzERtKvZzx_5SN8Mg/viewform" target="_blank" class="btn btn-warning text-white w-100 mt-auto">Buka Form</a>
                 </div>
             </div>
         </div>
@@ -161,16 +213,10 @@
     document.getElementById('searchInput').addEventListener('keyup', function() {
         let filter = this.value.toLowerCase();
         let cards = document.querySelectorAll('.document-item');
-        
         cards.forEach(card => {
             let title = card.querySelector('.card-title')?.innerText.toLowerCase() || "";
             let id = card.querySelector('.id-badge')?.innerText.toLowerCase() || "";
-            
-            if(title.includes(filter) || id.includes(filter)) {
-                card.style.display = "flex";
-            } else {
-                card.style.display = "none";
-            }
+            card.style.display = (title.includes(filter) || id.includes(filter)) ? "flex" : "none";
         });
     });
 </script>
